@@ -13,6 +13,9 @@
 .header-sidebar {
   grid-area: header-sidebar;
   background-color: lightskyblue;
+  padding: 1em;
+  color: white;
+  font-weight: 700;
 }
 
 .menu {
@@ -29,14 +32,47 @@ li {
   grid-area: quick-access;
   display: grid;
   grid-template-rows: 1fr 2fr;
+  margin: 0 2em;
 }
 
-.quick-access-top{
+.quick-access-top {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr 1fr 3fr;
-  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-content: space-around;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  align-items: center;
+  gap: 1em;
+}
+
+.user-bar {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-self: end;
+  gap: 1em;
+}
+
+.quick-access-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.greeting {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+.action-button {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
 }
 
 .main {
@@ -45,6 +81,7 @@ li {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 4fr 1fr;
+  padding: 0 1em;
 }
 
 .announcement {
