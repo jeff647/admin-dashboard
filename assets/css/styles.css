@@ -11,6 +11,9 @@
 }
 
 .header-sidebar {
+  display: grid;
+  gap: 1em;
+  grid-template-rows: 70px 1fr;
   grid-area: header-sidebar;
   background-color: lightskyblue;
   padding: 1em;
@@ -18,8 +21,9 @@
   font-weight: 700;
 }
 
-.menu {
-  display: grid;
+.menu{
+  display:grid;
+  gap: 1em;
 }
 
 .menu ul,
@@ -54,7 +58,7 @@ li {
   grid-auto-flow: column;
   align-items: center;
   justify-self: end;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .quick-access-bottom {
@@ -74,7 +78,19 @@ li {
 .action-button {
   display: grid;
   grid-auto-flow: column;
-  gap: 1em;
+  gap: 1.5em;
+  justify-self: end;
+}
+
+.action-button button{
+  border: none;
+  width: 120px;
+  padding: 10px 10px;
+  color: white;
+  font-weight: 700;
+  background-color: lightblue;
+  /* Elliptical corners */
+  border-radius: 15% / 50%;
 }
 
 .main {
