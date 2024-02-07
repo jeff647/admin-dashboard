@@ -10,10 +10,14 @@
   grid-template-columns: 1fr 5fr;
 }
 
+.logo {
+  font-size: 26px;
+}
+
 .header-sidebar {
   display: grid;
-  gap: 1em;
-  grid-template-rows: 70px 1fr;
+  gap: 2em;
+  grid-template-rows: 30px 1fr;
   grid-area: header-sidebar;
   background-color: lightskyblue;
   padding: 1em;
@@ -21,8 +25,15 @@
   font-weight: 700;
 }
 
-.menu{
-  display:grid;
+.menu {
+  display: grid;
+  gap: 2em;
+  align-self: start;
+}
+
+.menu-top ul,
+.menu-bottom ul {
+  display: grid;
   gap: 1em;
 }
 
@@ -82,7 +93,7 @@ li {
   justify-self: end;
 }
 
-.action-button button{
+.action-button button {
   border: none;
   width: 120px;
   padding: 10px 10px;
