@@ -12,6 +12,9 @@
 
 .logo {
   font-size: 26px;
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
 .header-sidebar {
@@ -31,16 +34,22 @@
   align-self: start;
 }
 
+.menu ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+
 .menu-top ul,
 .menu-bottom ul {
   display: grid;
   gap: 1em;
 }
 
-.menu ul,
-li {
-  padding: 0;
-  list-style-type: none;
+.menu ul li{
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
 .quick-access {
