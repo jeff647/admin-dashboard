@@ -161,7 +161,8 @@ li {
   padding: 0 1.5em 0 0;
 }
 
-.announcement-card-container {
+.announcement-card-container,
+.trending-card-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -173,7 +174,9 @@ li {
 }
 
 .announcement-card-container p,
-.announcement-card-container h4 {
+.announcement-card-container h4,
+.trending-card-container p,
+.trending-card-container h4 {
   padding: 0;
   margin: 0;
 }
@@ -187,6 +190,12 @@ li {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   padding: 0 1.5em 0 0;
+}
+
+.trending-card{
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
 footer {
