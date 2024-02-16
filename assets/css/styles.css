@@ -62,7 +62,7 @@ li {
 
 .quick-access-top {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-around;
 }
@@ -74,12 +74,20 @@ li {
   gap: 1em;
 }
 
+#quick-search {
+  border-radius: 15px;
+  border: none;
+  background-color: lightgray;
+  height: 30px;
+  padding: 1em;
+}
+
 .user-bar {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   justify-self: end;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .quick-access-bottom {
@@ -128,8 +136,8 @@ li {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-auto-rows: 225px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: 250px;
   grid-gap: 1.5em;
 }
 
@@ -192,7 +200,7 @@ li {
   padding: 0 1.5em 0 0;
 }
 
-.trending-card{
+.trending-card {
   display: flex;
   gap: 1em;
   align-items: center;
@@ -232,4 +240,25 @@ footer {
 .avatar-medium {
   width: 80px;
   height: 80px;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
 }
