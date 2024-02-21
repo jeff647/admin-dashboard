@@ -1,3 +1,13 @@
+:root {
+  --amber-high: #f59e0b;
+  --amber-low: #fef3c7;
+  --amber-mid: #fcd34d;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .grid-layout {
   width: 100vw;
   height: 100vh;
@@ -22,7 +32,7 @@
   gap: 2em;
   grid-template-rows: 30px 1fr;
   grid-area: header-sidebar;
-  background-color: lightskyblue;
+  background-color: var(--amber-high);
   padding: 1.5em;
   color: white;
   font-weight: 700;
@@ -32,6 +42,7 @@
   display: grid;
   gap: 2em;
   align-self: start;
+  font-size: 18px;
 }
 
 .menu ul,
@@ -57,7 +68,8 @@ li {
   display: grid;
   grid-template-rows: 1fr 2fr;
   gap: 1em;
-  margin: 1em 2em;
+  padding: 1em 2em;
+  background-color: var(--amber-low);
 }
 
 .quick-access-top {
@@ -77,7 +89,7 @@ li {
 #quick-search {
   border-radius: 15px;
   border: none;
-  background-color: lightgray;
+  background-color: #fbbf24;
   height: 30px;
   padding: 1em;
 }
@@ -117,14 +129,14 @@ li {
   padding: 10px 10px;
   color: white;
   font-weight: 700;
-  background-color: lightblue;
+  background-color: var(--amber-high);
   /* Elliptical corners */
   border-radius: 15% / 50%;
 }
 
 .main {
   grid-area: main;
-  background-color: lightgray;
+  background-color: var(--amber-mid);
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 4fr 1fr;
@@ -215,7 +227,7 @@ li {
 
 footer {
   grid-area: footer;
-  background-color: rgb(212, 212, 212);
+  background-color: var(--amber-low);
   display: flex;
   align-items: center;
   justify-content: center;
