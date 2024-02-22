@@ -57,7 +57,7 @@ li {
   gap: 1em;
 }
 
-.menu ul li {
+.menu ul li a {
   display: flex;
   gap: 1em;
   align-items: center;
